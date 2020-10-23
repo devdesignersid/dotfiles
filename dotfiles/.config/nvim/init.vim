@@ -8,6 +8,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'frazrepo/vim-rainbow'
 
 call plug#end()
 
@@ -18,6 +19,8 @@ set number
 set background=dark 
 colorscheme gruvbox
 let g:airline_powerline_fonts = 1
+
+let g:rainbow_activate = 1
 
 set splitright
 set splitbelow
@@ -36,7 +39,7 @@ let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 " coc intellisense for web languages
 let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver']
-
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " turn terminal to normal mode with escape
 tnoremap <Esc> <C-\><C-n>
