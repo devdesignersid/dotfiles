@@ -1,10 +1,17 @@
+Day-O.app
+Dozer.app
 DuckDuckGo Privacy Essentials.app
+Firefox.app
 IINA.app
+Karabiner-Elements.app
+Karabiner-EventViewer.app
 LuLu.app
 Lunar.app
+MacPass.app
 Raindrop.io for Safari.app
 Rectangle.app
 Safari.app
 Skim.app
 Stats.app
+Telegram Lite.app
 Utilities

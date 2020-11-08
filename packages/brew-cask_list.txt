@@ -1,4 +1,8 @@
 brooklyn
+dozer
+firefox
+karabiner-elements
 lunar
+macpass
 rectangle
 stats

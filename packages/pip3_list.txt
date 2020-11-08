@@ -1,2 +1,4 @@
 /usr/local/lib
+/usr/local/lib/node_modules/cross-env
+/usr/local/lib/node_modules/gatsby-cli
 /usr/local/lib/node_modules/npm
