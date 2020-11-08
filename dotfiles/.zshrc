@@ -109,3 +109,19 @@ SPACESHIP_PROMPT_SEPARATE_LINE=false
 eval $(thefuck --alias)
 # You can use whatever you want as an alias, like for Mondays:
 eval $(thefuck --alias FUCK)
+
+alias update='. update.sh'
+
+# Prevent spotlight from indexing .node_modules folder.
+function npmi {
+    mkdir node_modules 2>/dev/null
+    touch ./node_modules/.metadata_never_index
+    if [ -f yarn.lock ]; then
+        yarn install $@
+    else
+        npm install $@
+    fi
+}
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/opt/llvm/bin:$PATH"

@@ -1,4 +1,5 @@
 source $HOME/.config/nvim/plug-config/signify.vim
+set shell=/usr/local/bin/zsh
 
 
 call plug#begin('~/.vim/plugged')
@@ -23,6 +24,11 @@ Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/gv.vim'
+Plug 'mhinz/vim-startify'
+Plug 'dense-analysis/ale'
+Plug 'jackguo380/vim-lsp-cxx-highlight'
+Plug 'vim-syntastic/syntastic'
+Plug 'rhysd/vim-clang-format'
 
 call plug#end()
 
@@ -62,6 +68,19 @@ let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver']
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
+" c++ syntax highlighting
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_class_decl_highlight = 1
+
+let g:syntastic_cpp_checkers = ['cpplint']
+let g:syntastic_c_checkers = ['cpplint']
+let g:syntastic_cpp_cpplint_exec = 'cpplint'
+" The following two lines are optional. Configure it to your liking!
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+
 
 " vim-closetag settings.
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
@@ -76,6 +95,13 @@ let g:closetag_regions = {
 let g:closetag_shortcut = '>'
 let g:closetag_close_shortcut = '<leader>>' 
 
+
+" Fix files with prettier, and then ESLint.
+let b:ale_fixers = ['prettier', 'eslint']
+" Equivalent to the above.
+let b:ale_fixers = {'javascript': ['prettier', 'eslint']}
+" Set this variable to 1 to fix files when you save them.
+let g:ale_fix_on_save = 1
 
 
 " turn terminal to normal mode with escape
@@ -105,11 +131,13 @@ noremap <C-E> 5<C-e>
 noremap W 5w
 noremap B 5b
 
-" set h (same as n, cursor left) to 'end of word'
-noremap h e
 
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
   \ 'ctrl-s': 'split',
   \ 'ctrl-v': 'vsplit'
   \}
+
+nnoremap <Leader>f :<C-u>ClangFormat<CR>
+
+let g:indentLine_fileTypeExclude = ['markdown']
