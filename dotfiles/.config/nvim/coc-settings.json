@@ -9,6 +9,7 @@
         "cache": {
           "directory": "/tmp/ccls"
         },
+        "highlight": { "lsRanges": true },
         "client": {
           "snippetSupport": true
         }
