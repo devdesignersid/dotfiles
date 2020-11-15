@@ -57,7 +57,7 @@ au BufEnter * if &buftype == 'terminal' | :startinsert | endif
 
 " open terminal on ctrl+n
 function! OpenTerminal()
-  split term://bash
+  split term://zsh
   resize 10
 endfunction
 
@@ -103,6 +103,7 @@ let b:ale_fixers = {'javascript': ['prettier', 'eslint']}
 " Set this variable to 1 to fix files when you save them.
 let g:ale_fix_on_save = 1
 
+let g:vimspector_enable_mappings = 'HUMAN'
 
 " turn terminal to normal mode with escape
 tnoremap <Esc> <C-\><C-n>
