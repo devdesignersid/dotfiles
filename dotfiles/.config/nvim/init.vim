@@ -140,6 +140,14 @@ let g:ale_fixers = {'elixir': ['mix_format']}
 
 let g:vimspector_enable_mappings = 'HUMAN'
 
+let g:indentLine_fileTypeExclude = ['markdown']
+
+" vimwiki setup
+let g:vimwiki_list = [{'path': '/Users/siddharth/Documents/Workspace/wiki', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_ext2syntax = {'.md' : 'markdown', '.markdown' : 'markdown', '.mdown' : 'markdown'}
+" Makes vimwiki markdown links as [text](text.md) instead of [text](text)
+let g:vimwiki_markdown_link_ext = 1
+
 " turn terminal to normal mode with escape
 tnoremap <Esc> <C-\><C-n>
 " open terminal with ctrl-n
@@ -180,4 +188,7 @@ let g:fzf_action = {
 
 nnoremap <Leader>f :<C-u>ClangFormat<CR>
 
-let g:indentLine_fileTypeExclude = ['markdown']
+
+
+
+
