@@ -29,6 +29,22 @@ Plug 'dense-analysis/ale'
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'vim-syntastic/syntastic'
 Plug 'rhysd/vim-clang-format'
+Plug 'yardnsm/vim-import-cost', { 'do': 'npm install' }
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'sainnhe/gruvbox-material'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
+Plug 'grvcoelho/vim-javascript-snippets'
+Plug 'christoomey/vim-system-copy'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
+Plug 'editorconfig/editorconfig-vim'
+Plug 'tpope/vim-commentary'
+Plug 'pangloss/vim-javascript'
+Plug 'elixir-editors/vim-elixir'
+Plug 'liuchengxu/space-vim-dark'
+Plug 'Rigellute/shades-of-purple.vim'
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
@@ -46,8 +62,23 @@ set title
 
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 set background=dark 
-colorscheme gruvbox
+" colorscheme gruvbox
+" Available values: 'hard', 'medium'(default), 'soft'
+" let g:gruvbox_material_background = 'medium'
+"colorscheme gruvbox-material
+"
+colorscheme space-vim-dark
+hi Comment cterm=italic
+
+
+
 let g:airline_powerline_fonts = 1
+let g:shades_of_purple_airline = 2
+let g:airline_theme = 'shades_of_purple'
+let g:airline#extensions#tabline#enabled = 1
+
+
+let g:snipMate = { 'snippet_version' : 1 }
 
 set splitright
 set splitbelow
@@ -102,6 +133,10 @@ let b:ale_fixers = ['prettier', 'eslint']
 let b:ale_fixers = {'javascript': ['prettier', 'eslint']}
 " Set this variable to 1 to fix files when you save them.
 let g:ale_fix_on_save = 1
+let g:ale_sign_error = '❌'
+let g:ale_sign_warning = '⚠️'
+let g:ale_linters = {'rust': ['analyzer']}
+let g:ale_fixers = {'elixir': ['mix_format']}
 
 let g:vimspector_enable_mappings = 'HUMAN'
 
@@ -131,6 +166,10 @@ noremap <C-E> 5<C-e>
 " Faster in-line navigation
 noremap W 5w
 noremap B 5b
+
+" Javascript snippet autocompletion.
+imap <C-J> <esc>a<Plug>snipMateNextOrTrigger
+smap <C-J> <Plug>snipMateNextOrTrigger
 
 
 let g:fzf_action = {

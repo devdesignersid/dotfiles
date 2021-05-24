@@ -39,5 +39,6 @@
     "javascriptreact",
     "typescript.tsx"
   ],
-  "coc.preferences.diagnostic.virtualText": true
-}
+  "coc.preferences.diagnostic.virtualText": true,
+  "elixir.pathToElixirLS": "~/.elixir-ls/release/language_server.sh"
+  }
