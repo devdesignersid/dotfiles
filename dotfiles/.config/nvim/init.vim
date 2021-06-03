@@ -45,6 +45,7 @@ Plug 'elixir-editors/vim-elixir'
 Plug 'liuchengxu/space-vim-dark'
 Plug 'Rigellute/shades-of-purple.vim'
 Plug 'vimwiki/vimwiki'
+Plug 'tbabej/taskwiki'
 
 call plug#end()
 
@@ -147,6 +148,11 @@ let g:vimwiki_list = [{'path': '/Users/siddharth/Documents/Workspace/wiki', 'syn
 let g:vimwiki_ext2syntax = {'.md' : 'markdown', '.markdown' : 'markdown', '.mdown' : 'markdown'}
 " Makes vimwiki markdown links as [text](text.md) instead of [text](text)
 let g:vimwiki_markdown_link_ext = 1
+
+let g:taskwiki_markup_syntax = 'markdown'
+let g:markdown_folding = 1
+
+
 
 " turn terminal to normal mode with escape
 tnoremap <Esc> <C-\><C-n>

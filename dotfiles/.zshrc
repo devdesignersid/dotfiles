@@ -111,9 +111,6 @@ eval $(thefuck --alias)
 # You can use whatever you want as an alias, like for Mondays:
 eval $(thefuck --alias FUCK)
 
-alias update='. update.sh'
-alias skim='skim.sh'
-
 # Prevent spotlight from indexing .node_modules folder.
 function npmi {
     mkdir node_modules 2>/dev/null
@@ -128,5 +125,20 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 
+
+# Go development
+export GOPATH="${HOME}/go"
+export PATH="$PATH:${GOPATH}/bin"
+test -d "${GOPATH}" || mkdir "${GOPATH}"
+test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
+
+export EDITOR=nvim
+export VISUAL="$EDITOR"
+
+
+# Aliases
+alias update='. update.sh'
+alias skim='skim.sh'
+alias dev='tmuxinator start dev'
 
 
