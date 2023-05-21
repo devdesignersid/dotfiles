@@ -3,7 +3,7 @@ format = '''\[$time\] $status$cmd_duration$username@$hostname \[$directory\]
 [$character ](bold)'''
 scan_timeout = 30
 command_timeout = 500
-add_newline = false
+add_newline = true
 
 [aws]
 format = 'on [$symbol($profile )(\($region\) )]($style)'
@@ -19,9 +19,9 @@ style = 'red bold'
 
 [character]
 format = '$symbol '
-success_symbol = '[▷](bold green)'
-error_symbol = '[◁](bold red)'
-vicmd_symbol = '[◁](bold green)'
+success_symbol = '[ᐅ](bold green)'
+error_symbol = '[ᐊ](bold red)'
+vicmd_symbol = '[ᐊ](bold green)'
 disabled = false
 
 [cmake]
@@ -95,7 +95,7 @@ truncate_to_repo = true
 fish_style_pwd_dir_length = 0
 use_logical_path = true
 format = '[$path]($style)[$read_only]($read_only_style)'
-style = 'fg:85 bold'
+style = '#3bb798 bold'
 disabled = false
 read_only = '🔒'
 read_only_style = 'red'
@@ -616,7 +616,7 @@ detect_folders = ['.terraform']
 
 [time]
 format = '[$time]($style)'
-style = 'bold fg:202'
+style = 'bold #cf845b'
 use_12hr = false
 disabled = false
 utc_time_offset = 'local'
@@ -626,7 +626,7 @@ time_format = '%T %d/%m'
 [username]
 format = '[$user]($style)'
 style_root = 'fg:190 bold'
-style_user = 'fg:226 bold'
+style_user = 'purple bold'
 show_always = true
 disabled = false
 
