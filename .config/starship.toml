@@ -1,5 +1,5 @@
 
-format = '''\[$time\] $status$cmd_duration$username@$hostname \[$directory\] $golang
+format = '''\[$time\] $status$cmd_duration$username@$hostname \[$directory\] $git_branch $golang
 [$character ](bold)'''
 scan_timeout = 30
 command_timeout = 500
@@ -195,7 +195,7 @@ truncation_length = 9223372036854775807
 truncation_symbol = '…'
 only_attached = false
 always_show_remote = false
-disabled = true
+disabled = false
 
 [git_commit]
 commit_hash_length = 7
