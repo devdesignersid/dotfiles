@@ -1,1 +1,0 @@
-/Users/siddharthskumar/.config/zsh/.zshrc
