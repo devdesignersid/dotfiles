@@ -12,3 +12,4 @@ export MANWIDTH=999
 export GOPATH=$HOME/.local/share/go
 
 eval "$(zoxide init zsh)"
+eval "$(starship init zsh)"
