@@ -7,5 +7,5 @@ alias update='update-all.sh'
 # docker - postgres
 alias pg-init='docker run --name postgres-playground -e POSTGRES_PASSWORD=password -e POSTGRES_USER=sid -d -p 5432:5432 postgres:14.9-alpine'
 alias pg-start='docker start postgres-playground'
-alias pg-play='docker exec -it postgres-playground psql -U sid'
+alias pg-play='pgcli -h 0.0.0.0 -p 5432 -U sid'
 alias pg-stop='docker stop postgres-playground'
