@@ -107,7 +107,10 @@ return packer.startup(function(use)
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
-  use 'Exafunction/codeium.vim'
+	use("Exafunction/codeium.vim")
+
+	-- Install without configuration
+	use({ "projekt0n/github-nvim-theme" })
 
 	if packer_bootstrap then
 		require("packer").sync()
