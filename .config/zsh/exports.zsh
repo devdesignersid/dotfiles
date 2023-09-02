@@ -10,6 +10,7 @@ export MANWIDTH=999
 export MANPAGER="nvim +Man!"
 export MANWIDTH=999
 export GOPATH=$HOME/.local/share/go
+export PATH="/usr/local/sbin:$PATH"
 
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
