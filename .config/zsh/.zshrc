@@ -9,6 +9,7 @@ HISTFILE=~/.zsh_history
 # source
 plug "$HOME/.config/zsh/aliases.zsh"
 plug "$HOME/.config/zsh/exports.zsh"
+plug "$HOME/.config/zsh/history.zsh"
 
 # plugins
 plug "zsh-users/zsh-autosuggestions"
@@ -18,6 +19,8 @@ plug "zap-zsh/vim"
 plug "zap-zsh/fzf"
 plug "zap-zsh/exa"
 plug "zsh-users/zsh-syntax-highlighting"
+plug "zsh-users/zsh-completions"
+
 
 export PATH="$HOME/.local/bin":$PATH
 
