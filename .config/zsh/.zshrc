@@ -10,6 +10,8 @@ HISTFILE=~/.zsh_history
 plug "$HOME/.config/zsh/aliases.zsh"
 plug "$HOME/.config/zsh/exports.zsh"
 plug "$HOME/.config/zsh/history.zsh"
+plug "$HOME/.config/zsh/git.zsh"
+plug "$HOME/.config/zsh/fzf.zsh"
 
 # plugins
 plug "zsh-users/zsh-autosuggestions"

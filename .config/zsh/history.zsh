@@ -1,3 +1,5 @@
+#!/bin/sh
+#
 function omz_history {
   local clear list
   zparseopts -E c=clear l=list
@@ -14,6 +16,13 @@ function omz_history {
     [[ ${@[-1]-} = *[0-9]* ]] && builtin fc -l "$@" || builtin fc -l "$@" 1
   fi
 }
+
+function erase_history { local HISTSIZE=0; }
+
+function zshaddhistory_erase_history {
+  [[ $1 != [[:space:]]#erase_history[[:space:]]# ]]
+}
+zshaddhistory_functions+=(zshaddhistory_erase_history)
 
 # Timestamp format
 case ${HIST_STAMPS-} in
