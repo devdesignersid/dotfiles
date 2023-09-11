@@ -56,3 +56,8 @@ keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current c
 
 -- restart lsp server (not on youtube nvim video)
 keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if necessary
+
+-- dap
+keymap.set("n", "<Leader>dt", ":DapToggleBreakpoint<CR>")
+keymap.set("n", "<Leader>dx", ":DapTerminate<CR>")
+keymap.set("n", "<Leader>do", ":DapStepOver<CR>")

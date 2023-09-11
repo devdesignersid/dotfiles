@@ -112,6 +112,11 @@ return packer.startup(function(use)
 	-- Install without configuration
 	use({ "projekt0n/github-nvim-theme" })
 
+	use("simrat39/rust-tools.nvim")
+
+	use("mfussenegger/nvim-dap")
+	use("rcarriga/nvim-dap-ui")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

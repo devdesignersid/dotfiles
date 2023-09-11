@@ -16,6 +16,18 @@ if not typescript_setup then
 	return
 end
 
+local rt = require("rust-tools")
+rt.setup({
+	server = {
+		on_attach = function(_, bufnr)
+			-- Hover actions
+			vim.keymap.set("n", "<C-space>", rt.hover_actions.hover_actions, { buffer = bufnr })
+			-- Code action groups
+			vim.keymap.set("n", "<Leader>a", rt.code_action_group.code_action_group, { buffer = bufnr })
+		end,
+	},
+})
+
 local keymap = vim.keymap -- for conciseness
 
 -- enable keybinds only for when lsp server available
@@ -113,9 +125,15 @@ lspconfig["lua_ls"].setup({
 -- configure golang server
 lspconfig["gopls"].setup({
 	-- for postfix snippets and analyzers
+	on_attach = on_attach,
 	capabilities = capabilities,
+	cmd = { "gopls" },
+	filetypes = { "go", "gomod", "gowork", "gotmpl" },
+	root_dir = lspconfig.util.root_pattern("go.work", "go.mod", ".git"),
 	settings = {
 		gopls = {
+			completeUnimported = true,
+			usePlaceholders = true,
 			experimentalPostfixCompletions = true,
 			analyses = {
 				unusedparams = true,
@@ -124,5 +142,4 @@ lspconfig["gopls"].setup({
 			staticcheck = true,
 		},
 	},
-	on_attach = on_attach,
 })
