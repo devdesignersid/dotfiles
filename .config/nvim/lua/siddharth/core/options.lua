@@ -37,4 +37,7 @@ opt.clipboard:append("unnamedplus") -- use system clipboard as default register
 opt.splitright = true -- split vertical window to the right
 opt.splitbelow = true -- split horizontal window to the bottom
 
+opt.spelllang = "en_us"
+opt.spell = true
+
 opt.iskeyword:append("-") -- consider string-string as whole word

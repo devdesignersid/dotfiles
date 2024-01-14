@@ -33,8 +33,6 @@ return packer.startup(function(use)
 
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
-	use("folke/tokyonight.nvim") -- prefered colorscheme
-
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 
 	use("szw/vim-maximizer") -- maximizes and restores current window
@@ -109,13 +107,11 @@ return packer.startup(function(use)
 
 	use("Exafunction/codeium.vim")
 
-	-- Install without configuration
-	use({ "projekt0n/github-nvim-theme" })
-
 	use("simrat39/rust-tools.nvim")
 
 	use("mfussenegger/nvim-dap")
 	use("rcarriga/nvim-dap-ui")
+	use("rebelot/kanagawa.nvim")
 
 	if packer_bootstrap then
 		require("packer").sync()

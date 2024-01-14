@@ -13,6 +13,7 @@ plug "$HOME/.config/zsh/history.zsh"
 plug "$HOME/.config/zsh/git.zsh"
 plug "$HOME/.config/zsh/fzf.zsh"
 
+
 # plugins
 plug "zsh-users/zsh-autosuggestions"
 plug "hlissner/zsh-autopair"
@@ -35,3 +36,5 @@ eval "$(fnm env --use-on-cd)"
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+
+
