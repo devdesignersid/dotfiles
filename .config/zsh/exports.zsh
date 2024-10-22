@@ -13,6 +13,7 @@ export GOPATH=$HOME/.local/share/go
 export PATH="$GOPATH/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export FZF_DEFAULT_COMMAND='rg'
+export FPATH="~/Downloads/eza/completions/zsh:$FPATH"
 
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"

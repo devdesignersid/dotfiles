@@ -1,0 +1,90 @@
+{
+  "cSpell.userWords": [
+    "Kumar",
+    "Siddharth",
+  ],
+  "editor.accessibilitySupport": "off",
+  "editor.fontLigatures": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.scale": 2,
+  "window.titleBarStyle": "custom",
+  "workbench.iconTheme": "moxer-icons",
+
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "tailwindCSS.experimental.configFile": null,
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "javascript"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.lineHeight": 1.5,
+  "workbench.colorTheme": "Kanagawa",
+  "terminal.integrated.fontWeight": "normal",
+  "terminal.integrated.fontSize": 11,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.associations": {
+    ".env*": "dotenv"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": []
+  },
+  "dotenv.enableAutocloaking": false,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      80
+    ],
+    "editor.selectionHighlight": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "database-client.autoSync": true,
+  "workbench.statusBar.visible": false,
+  "editor.scrollbar.horizontal": "auto",
+  "editor.scrollbar.vertical": "auto",
+  "editor.renderWhitespace": "none",
+  "editor.minimap.enabled": false,
+
+
+  "editor.fontFamily": "GeistMono Nerd Font",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "chat.editor.fontFamily": "GeistMono Nerd Font",
+  "debug.console.fontFamily": "GeistMono Nerd Font",
+  "editor.codeLensFontFamily": "GeistMono Nerd Font",
+  "notebook.output.fontFamily": "GeistMono Nerd Font",
+  "markdown.preview.fontFamily": "GeistMono Nerd Font",
+  "editor.inlayHints.fontFamily": "GeistMono Nerd Font",
+  "workbench.activityBar.location": "bottom",
+  "workbench.startupEditor": "none",
+  "explorer.compactFolders": false,
+  "breadcrumbs.filePath": "off",
+  "files.trimTrailingWhitespace": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+
+  "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
+  "vscode-neovim.neovimInitVimPaths.darwin": "$HOME/.config/nvim/init.vim",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+
+
+
+
+}

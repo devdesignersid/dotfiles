@@ -3,34 +3,6 @@ live_config_reload = true
 [colors]
 draw_bold_text_with_bright_colors = true
 
-# [colors.bright]
-# black = "0x6e7681"
-# blue = "0x79c0ff"
-# cyan = "0x39c5cf"
-# green = "0x79c0ff"
-# magenta = "0xbc8cff"
-# red = "0xffa198"
-# white = "0xb1bac4"
-# yellow = "0xe3b341"
-#
-# [colors.cursor]
-# cursor = "0xc9d1d9"
-# text = "0x0d1117"
-#
-# [colors.normal]
-# black = "0x484f58"
-# blue = "0x58a6ff"
-# cyan = "0x39c5cf"
-# green = "0x58a6ff"
-# magenta = "0xbc8cff"
-# red = "0xff7b72"
-# white = "0xb1bac4"
-# yellow = "0xd29922"
-#
-# [colors.primary]
-# background = "0x0d1117"
-# foreground = "0xc9d1d9"
-
 [colors.primary]
 background = "0x1f1f28"
 foreground = "0xdcd7ba"
@@ -80,22 +52,22 @@ unfocused_hollow = true
 TERM = "xterm-256color"
 
 [font]
-size = 11.0
+size = 11.3
 
 [font.bold]
-family = "GeistMono Nerd Font"
+family = "JetBrainsMono Nerd Font"
 style = "Bold"
 
 [font.bold_italic]
-family = "GeistMono Nerd Font"
+family = "JetBrainsMono Nerd Font"
 style = "Bold Italic"
 
 [font.italic]
-family = "GeistMono Nerd Font"
+family = "JetBrainsMono Nerd Font"
 style = "Italic"
 
 [font.normal]
-family = "GeistMono Nerd Font"
+family = "JetBrainsMono Nerd Font"
 style = "Regular"
 
 [font.offset]

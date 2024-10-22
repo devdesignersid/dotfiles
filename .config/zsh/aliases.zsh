@@ -50,4 +50,7 @@ alias gup='git branch --set-upstream-to=origin/$(git-current-branch) $(git-curre
 alias gnext='git log --ancestry-path --format=%H ${commit}..master | tail -1 | xargs git checkout'
 alias gprev='git checkout HEAD^'
 
+alias ls='eza'
+alias ll='eza -l'
+
 
