@@ -8,7 +8,6 @@
   "editor.minimap.renderCharacters": false,
   "editor.minimap.scale": 2,
   "window.titleBarStyle": "custom",
-  "workbench.iconTheme": "moxer-icons",
 
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -83,8 +82,22 @@
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-
-
+  "workbench.productIconTheme": "material-product-icons",
+  "workbench.iconTheme": "glyph.legacy",
+  "editor.showUnused": false,
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "explorer.openEditors.visible": 1,
+  "explorer.autoReveal": false,
+  "workbench.sideBar.location": "left",
+  "workbench.tree.indent": 12,
+  "workbench.tree.renderIndentGuides": "none",
+  "git.openRepositoryInParentFolders": "always",
+  "git.decorations.enabled": true,
+  "editor.overviewRulerBorder": false,
+  "editor.padding.bottom": 14,
+  "editor.codeLens": false,
+  "editor.smoothScrolling": true,
 
 
 }
